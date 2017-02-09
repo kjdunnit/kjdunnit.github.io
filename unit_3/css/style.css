@@ -1,0 +1,60 @@
+body {
+  font-family: helvetica;
+  background-color: #E7FDFE;
+  margin: 0 !important;
+}
+h1 {
+  color: #FF6C41;
+  margin: 20px;
+}
+h2 {
+  font-family: times new roman;
+  color: white;
+  margin: 20px;
+}
+p {
+	margin: 20px;
+}
+#projects {
+  float: right;
+  width: 60%;
+  height: 1000px;
+  background-color: #EAECEE;
+}
+#navbar {
+  float: right;
+  width: 40%;
+  height: 1000px;
+  background-color: #E7FDFE;
+}
+#hero {
+  width: 100%; 
+}
+.project-title {
+
+}
+.project-row {
+
+}
+.project-column{
+
+}
+.container {
+
+}
+#profile-image {
+	width: 100%;
+	margin-top: 100px; 
+}
+#profile {
+	padding: 0px 50px;
+}
+
+
+
+
+
+
+
+
+
