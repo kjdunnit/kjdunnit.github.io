@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Mrs+Sheppards');
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro');
+@import url('https://fonts.googleapis.com/css?family=VT323');
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arvo', serif;
+  color:#ffffff;
+  background-color: #ebe7fe;
+  min-width: 1280px;
+}
+h1 {
+  color: #375936;
+  margin-top: 20px;
+  font-family: 'Sacramento', cursive;
+  font-size: 4em;
+  font-weight: none;
+  clear: both;
+}
+h2 {
+  font-family:'Arvo', monospace;
+  color: #e3985f;
+  margin: 10px;
+  font-size: 15px;
+  padding-left: 18px;
+}
+p {
+  margin: 20px;
+}
+nav {
+  text-align: right;
+  color: black;
+  width: 50%;
+  float: right;
+  background-color: #E8C66A;
+  border: 1px black solid;
+  padding: 20px;
+}
+.li {
+  background: white;
+  margin-bottom: 8px;
+  padding: 16px 0;
+  list-style: none;
+}
+/*aside {
+  background-color: #FFC675;
+  border: 1px black solid;
+  padding: 20px;
+}
+article {
+  background-color: #E89C6C;
+  border: 1px black solid;
+  padding: 20px;
+}
+footer {
+  background-color: #FF957E;
+  border: 1px black solid;
+  padding: 20px;
+}
+section{
+  background-color: #FFE2B8;
+  border: 1px black solid;
+  padding: 20px;*/
+}*/
+.project-row {
+  width: 100%;
+  clear: both;
+  /*border: solid 0px red;*/
+}
+.project-heading {
+  float: right;
+  /*margin-left:20px;*/
+  /*border: solid 1px red;*/
+}
+.container-heading {
+  background-color: #ffffff;
+  width:300px;
+}
+.project-column{
+  display:inline-block;
+  width: 45%;
+}
+
+.project-column.title {
+  float: right;
+}
+.container {
+  background-color: #ffffff;
+  width:300px;
+  height: 60px;
+  padding: 50px;
+}
+.nofloat {
+  clear: both;
+}
+.ulmargin{
+  margin: 30px;
+  text-align: left;
+}
+.body-heading {
+  padding-top: 25px;
+  padding-right: 25px;
+}
+#projects {
+  float:right;
+  width: 70%;
+  height: 1000px;
+  background-color: #f2e17d;
+  background-image: url('../images/pineapple.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#navbar {
+  float: left;
+  width: 30%;
+  height: 200px;
+  background-color: #e3985f;
+  text-align: center;
+}
+#header {
+  float: left;
+  width: 30%;
+  height: 800px;
+  background-color: #e3985f;
+  text-align: center;
+}
+#hero {
+  width: 100%; 
+}
+#profile-image {
+  width: 70%;
+  margin-top: 100px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+#profile {
+  padding: 0px 50px;
+}
+
+
+
+
