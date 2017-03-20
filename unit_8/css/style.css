@@ -11,31 +11,31 @@
   margin: 0;
   padding: 0;
 }
-
 body {
-  font-family: 'Arvo', serif;
+  font-family: 'helvetica', serif;
   color:#ffffff;
-  background-color: #ebe7fe;
+  background-color:#47B7D2;
   min-width: 1280px;
 }
 h1 {
-  color: #375936;
-  margin-top: 10px;
-  font-family: 'Sacramento', cursive;
+  color: #f0a7a5;
+  margin-top: 1em;
+  font-family: 'VT323', cursive;
   font-size: 4em;
   font-weight: none;
   clear: both;
 }
 h2 {
-  font-family:'Arvo', monospace;
+  font-family:'Share Tech Mono', monospace;
   color: #e3985f;
   margin: 10px;
   font-size: 15px;
   padding-left: 18px;
 }
-.pcover {
-  margin: 50%;
-  position: absolute;
+p {
+  margin: 1em;
+  color: black;
+  font-family:'Share Tech Mono', monospace;
 }
 nav {
   text-align: right;
@@ -44,6 +44,7 @@ nav {
   color: black;
   width: 40%;
   float: right;
+  font-family:'Share Tech Mono', monospace;
 }
 nav a{
   /*background-color: red;*/
@@ -53,6 +54,12 @@ nav a{
 }
 a:hover {
   color: orange;
+}
+.cover {
+  margin: 0;
+  position: relative;
+  color: black;
+  text-align: center;
 }
 .li {
   background: white;
@@ -64,6 +71,7 @@ a:hover {
   width: 100%;
   clear: both;
   border: solid 0px red;
+  margin: 1em;
 }
 .project-heading {
   float: right;
@@ -77,8 +85,8 @@ a:hover {
 .project-column{
   display:inline-block;
   width: 45%;
+  margin: .5em .5em;
 }
-
 .project-column.title {
   float: right;
 }
@@ -87,10 +95,11 @@ a:hover {
   width:300px;
   height: 60px;
   padding: 50px;
-  margin-left: 50px;
+  margin: 50px;
 }
 .container-webdesign {
   background: url('https://images.pexels.com/photos/196145/pexels-photo-196145.jpeg?w=940&h=650&auto=compress&cs=tinysrgb') no-repeat center top #FFF; 
+  background-size: cover;
   width:300px;
   height: 60px;
   padding: 50px;
@@ -109,6 +118,31 @@ a:hover {
 }
 .container-art{
   background: url('https://images.pexels.com/photos/292441/pexels-photo-292441.jpeg?w=940&h=650&auto=compress&cs=tinysrgb') no-repeat center top #FFF; 
+  background-size: cover;
+  width:300px;
+  height: 60px;
+  padding: 50px;
+  margin-left: 50px;
+}
+.container-branding{
+  background: url('../images/watermelon.jpeg') no-repeat center top #FFF; 
+  background-size: cover;
+  width:300px;
+  height: 60px;
+  padding: 50px;
+  margin-left: 50px;
+}
+.container-blog {
+  background: url('../images/orangespace.jpeg') no-repeat center top #FFF; 
+  background-size: cover; 
+  width:300px;
+  height: 60px;
+  padding: 50px;
+  margin-left: 50px;
+}
+.container-misc {
+  background: url('../images/leaf.jpg') no-repeat center top #FFF; 
+  background-size: cover;  
   width:300px;
   height: 60px;
   padding: 50px;
@@ -133,44 +167,6 @@ a:hover {
   padding-top: 25px;
   padding-right: 25px;
 }
-#projects {
-  float:right;
-  width: 70%;
-  height: 1000px;
-  background-color: #f2e17d;
-  background-image: url('../images/pineapple.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#navbar {
-  float: left;
-  width: 30%;
-  height: 130px;
-  background-color: #e3985f;
-  text-align: center;
-}
-#header {
-  float: left;
-  width: 30%;
-  height: 800px;
-  background-color: #e3985f;
-  text-align: center;
-}
-#hero {
-  width: 100%; 
-}
-#profile-image {
-  width: 70%;
-  margin: 70px 0 30px 0;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 100px;
-}
-#profile {
-  padding: 0px 50px;
-}
-
 .clearfix {
   visibility: hidden;
   display: block;
@@ -179,5 +175,151 @@ a:hover {
   clear: both;
   height: 0;
 }
+/*ID*/
+#projects {
+  float:right;
+  width: 70%;
+  background-repeat: repeat-y;
+  background-color: #D6EEF4;
+  /*background-image: url('../images/pineapple.jpeg');*/
+ /* background-size: cover;*/
+  /*background-repeat: repeat-y;*/
+}
+#navbar {
+  float: left;
+  width: 30%;
+  background-repeat: repeat-y;
+  background-color: #47B7D2;
+  text-align: center;
+}
+#header {
+  float: left;
+  width: 30%;
+  /*height: 100%;*/
+  background-repeat: repeat-y;
+  background-color: #47B7D2;
+  text-align: center;
+}
+#hero {
+  width: 100%; 
+}
+#profile-image {
+  width: 100%;
+  margin: 2em 0;
+  display: block;
+ /* margin-right: auto;
+  margin-left: auto;*/
+/*  border-radius: 100em;*/
+}
+#profile {
+/*  padding: 0px 50px;*/
+}
+
+
+/* MEDIA QUERIEIS */
+/*tablets*/
+@media screen and (max-width:1200px) {
+  .project-column{
+    display:block;
+    padding: 1em;
+    border: solid 0px red;
+  }
+  .project-column.title {
+    text-align: center;
+  }
+  .project-row {
+    width: 100%;
+    clear: both;
+    border: solid 0px red;
+  } 
+  .project-heading {
+    position: relative;
+    width: 70%;
+    background-color: #ffffff;
+  }
+}
+
+/*MOBILE*/
+@media screen and (max-width: 640px) {
+  nav {
+    position: absolute;
+    width: 100%;
+    float: none
+  }
+  h2 {
+    padding: 0;
+    text-align: center;
+  }
+  .li {
+    background: white;
+    margin: 1em 0;
+    padding: 1.5em 0;
+    text-align: center;
+  } 
+  .container {
+    width: 100%;
+    height: 60px;
+    padding: 0px;
+    margin-left: none;
+  }
+  .container-heading {
+    width: 100%;
+    margin: 3em 0 0 0;
+    position: relative;
+  }
+  .container-webdesign, .container-digitalillustrations, .container-art, .container-blog, .container-branding, .container-misc {
+    margin: 0 auto;
+    position: relative;
+    float: none;
+    display: block;
+    width: auto;
+  }
+  .project-column {
+    display:block;
+    padding: 1em 0;
+    /*border: solid 1px red;*/
+    width: 100%;
+    margin: 0;
+  } 
+  .project-row {
+    width: 100%;
+    margin: 0 0 0 0;
+    /*border: solid 1px red;*/
+  }
+  .project-heading {
+    position: relative;
+    width: 50%;
+    background-color: #ffffff;
+    float: none;
+    display: block;
+    margin: auto;
+  }
+  .cover {
+    position: relative; 
+    text-align: center;
+    margin-top: 1em;
+  }
+  #navbar {
+    float: none;
+    width: 100%;
+    height: 100%;
+   }
+  #header, .ul, h1 {
+    visibility: hidden;
+  }
+  #projects {
+    position: absolute;
+    margin: 10em 0;
+    float: none;
+    width: 100%;
+  }
+  
+}
+
+
+
+
+
+
 
 
