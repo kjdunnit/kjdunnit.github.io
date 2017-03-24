@@ -13,13 +13,13 @@
 }
 body {
   font-family: 'helvetica', serif;
-  color:#ffffff;
-  background-color:#47B7D2;
+  color:#ffffef;
+  background-color: #ffffff;
   min-width: 1280px;
 }
 h1 {
-  color: #f0a7a5;
-  margin-top: 1em;
+  color: #857E7B;
+/*  margin-top: 1em;*/
   font-family: 'VT323', cursive;
   font-size: 4em;
   font-weight: none;
@@ -27,28 +27,28 @@ h1 {
 }
 h2 {
   font-family:'Share Tech Mono', monospace;
-  color: #e3985f;
+  color: #556F7A;
   margin: 10px;
   font-size: 15px;
   padding-left: 18px;
 }
 p {
-  margin: 1em;
-  color: black;
-  font-family:'Share Tech Mono', monospace;
+  color: #556F7A;
+  background-color: #ffffff;
+  margin: 2em;
+ font-family:'Share Tech Mono', monospace;
 }
 nav {
   text-align: right;
   text-transform: uppercase;
   font-size: x-small;
-  color: black;
-  width: 40%;
+  width: 30%;
   float: right;
   font-family:'Share Tech Mono', monospace;
 }
 nav a{
   /*background-color: red;*/
-  color: black;
+  color: #000000;
   text-decoration: none;
   padding: 4px;
 }
@@ -58,37 +58,43 @@ a:hover {
 .cover {
   margin: 0;
   position: relative;
-  color: black;
+  color: #000000;
   text-align: center;
+  /*text-shadow: 1px 1px #000000;*/
 }
 .li {
-  background: white;
+  background: #DBB957;
   margin: 8px 0;
   padding: 10px 0;
   list-style: none;
+  border-bottom-left-radius: 8px;
 }
 .project-row {
   width: 100%;
   clear: both;
   border: solid 0px red;
   margin: 1em;
+  border-bottom-left-radius: 8px;
 }
 .project-heading {
   float: right;
   /*margin-left:20px;*/
   /*border: solid 1px red;*/
-}
-.container-heading {
-  background-color: #ffffff;
-  width:300px;
+  background: #FFFFFF;
+  border-bottom-left-radius: 8px;
 }
 .project-column{
   display:inline-block;
   width: 45%;
   margin: .5em .5em;
+  padding-left: 3%;
 }
 .project-column.title {
   float: right;
+}
+.container-heading {
+  /*background-color: #ffffff;*/
+  width:300px;
 }
 .container {
   background-color: #FFF; 
@@ -98,55 +104,57 @@ a:hover {
   margin: 50px;
 }
 .container-webdesign {
-  background: url('https://images.pexels.com/photos/196145/pexels-photo-196145.jpeg?w=940&h=650&auto=compress&cs=tinysrgb') no-repeat center top #FFF; 
+  background: url('../images/jet.jpeg') no-repeat center top #FFF; 
   background-size: cover;
   width:300px;
-  height: 60px;
   padding: 50px;
-  margin-left: 50px;
-}
-.container-digitalillustrations {
-  /*background: url('https://images.pexels.com/photos/126375/pexels-photo-126375.jpeg?w=940&h=650&auto=compress&cs=tinysrgb') no-repeat center top #FFF; */
-  background: url('../images/fall.jpg')  no-repeat center top #FFF;
-  background-size: cover;
-  width:300px;
-  height: 60px;
-  padding: 50px;
-  margin-left: 50px;
   text-align: center;
   position:relative;
+  /*border-radius: 8px;*/
+  box-shadow: 8px 8px 0px #ffffff;
 }
-.container-art{
-  background: url('https://images.pexels.com/photos/292441/pexels-photo-292441.jpeg?w=940&h=650&auto=compress&cs=tinysrgb') no-repeat center top #FFF; 
+.container-digitalillustrations {
+  background: url('../images/seagull.jpeg')  no-repeat center top #FFF;
   background-size: cover;
   width:300px;
-  height: 60px;
   padding: 50px;
-  margin-left: 50px;
+  text-align: center;
+  position:relative;
+  /*border-radius: 8px;*/
+  box-shadow: 8px 8px 0px #ffffff;
+  }
+.container-art{
+  background: url('../images/hatguy.jpg') no-repeat center top #FFF; 
+  background-size: cover;
+  width:300px;
+  padding: 50px;
+  box-shadow: 8px 8px 0px #ffffff;
+  /*border-radius: 8px;*/
 }
 .container-branding{
-  background: url('../images/watermelon.jpeg') no-repeat center top #FFF; 
+  background: url('../images/bridge.jpg') no-repeat center top #FFF; 
   background-size: cover;
   width:300px;
-  height: 60px;
   padding: 50px;
-  margin-left: 50px;
+  box-shadow: 8px 8px 0px #ffffff;  
+  /*border-radius: 8px;*/
 }
 .container-blog {
-  background: url('../images/orangespace.jpeg') no-repeat center top #FFF; 
+  background: url('../images/notepads.jpg') no-repeat center top #FFF; 
   background-size: cover; 
   width:300px;
-  height: 60px;
   padding: 50px;
-  margin-left: 50px;
+  box-shadow: 8px 8px 0px #ffffff;  
+  /*border-radius: 8px;*/
 }
 .container-misc {
-  background: url('../images/leaf.jpg') no-repeat center top #FFF; 
+  background: url('../images/pexels-photo.jpg') no-repeat center top #FFF; 
   background-size: cover;  
   width:300px;
-  height: 60px;
   padding: 50px;
-  margin-left: 50px;
+  box-shadow: 8px 8px 0px #ffffff;  
+/*  border-radius: 8px;*/
+ 
 }
 .nofloat {
   clear: both;
@@ -175,29 +183,32 @@ a:hover {
   clear: both;
   height: 0;
 }
-/*ID*/
+
+/*IDs*/
 #projects {
   float:right;
+  padding-top: 20px;
+  padding-bottom: 3%;
   width: 70%;
-  background-repeat: repeat-y;
-  background-color: #D6EEF4;
-  /*background-image: url('../images/pineapple.jpeg');*/
- /* background-size: cover;*/
+  height:100%;
+  background-color: #CBF3F0;
+ /* background-image: url('https://static.pexels.com/photos/71163/pexels-photo-71163.jpeg');
+  background-size: cover;*/
   /*background-repeat: repeat-y;*/
+  /*border-bottom-left-radius: 8px;*/
+  box-shadow: 8px 8px 0px #DBB957;
 }
 #navbar {
-  float: left;
-  width: 30%;
+  float: right;
+  width: 20%;
   background-repeat: repeat-y;
-  background-color: #47B7D2;
+  background-color: #ffffff;
   text-align: center;
 }
 #header {
   float: left;
   width: 30%;
-  /*height: 100%;*/
-  background-repeat: repeat-y;
-  background-color: #47B7D2;
+  background-color: #ffffff;
   text-align: center;
 }
 #hero {
@@ -205,18 +216,17 @@ a:hover {
 }
 #profile-image {
   width: 100%;
-  margin: 2em 0;
+  margin: 2em  2em 0 0;
   display: block;
- /* margin-right: auto;
-  margin-left: auto;*/
-/*  border-radius: 100em;*/
 }
 #profile {
-/*  padding: 0px 50px;*/
+  width: 40%;
+  display: block;
+  position: relative;
+  margin: auto;
 }
 
-
-/* MEDIA QUERIEIS */
+/* MEDIA QUERIES */
 /*tablets*/
 @media screen and (max-width:1200px) {
   .project-column{
@@ -237,7 +247,6 @@ a:hover {
     width: 70%;
     background-color: #ffffff;
   }
-}
 
 /*MOBILE*/
 @media screen and (max-width: 640px) {
@@ -251,10 +260,11 @@ a:hover {
     text-align: center;
   }
   .li {
-    background: white;
+    background: #DBB957;
     margin: 1em 0;
-    padding: 1.5em 0;
+    /*padding: 1.5em 0;*/
     text-align: center;
+    border-bottom-left-radius: 0px;
   } 
   .container {
     width: 100%;
@@ -264,8 +274,10 @@ a:hover {
   }
   .container-heading {
     width: 100%;
-    margin: 3em 0 0 0;
+    /*margin: 3em 0 0 0;*/
     position: relative;
+    height: 2em;
+    align-content: bottom;
   }
   .container-webdesign, .container-digitalillustrations, .container-art, .container-blog, .container-branding, .container-misc {
     margin: 0 auto;
@@ -273,6 +285,7 @@ a:hover {
     float: none;
     display: block;
     width: auto;
+    box-shadow: 0px 0px 0px #DBB957;
   }
   .project-column {
     display:block;
@@ -309,9 +322,10 @@ a:hover {
   }
   #projects {
     position: absolute;
-    margin: 10em 0;
+    margin: 7em 0;
     float: none;
     width: 100%;
+    padding-top: 1em;
   }
   
 }
